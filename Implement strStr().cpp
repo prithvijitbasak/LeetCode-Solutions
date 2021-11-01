@@ -6,7 +6,7 @@ public:
 	int strStr(string haystack, string needle) {
         int n=needle.size();
         if(n==0)
-        {https://leetcode.com/problems/implement-strstr/discuss/
+        {
             return 0;
         }
 		vector<int> lps(n);
