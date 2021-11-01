@@ -1,5 +1,6 @@
 //Editorial link: https://leetcode.com/problems/two-sum/discuss/674/C%2B%2B-one-pass
 //Code:
+//Runtime: 12ms 
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
