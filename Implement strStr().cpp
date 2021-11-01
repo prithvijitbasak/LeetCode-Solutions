@@ -1,6 +1,6 @@
 // Editorial: This problem can be solved using KMP algorithm.
 // To know about KMP algorithm watch: https://youtu.be/4jY57Ehc14Y
-// But still if have problem this is the perfect editorial: https://leetcode.com/problems/implement-strstr/discuss/12956/C%2B%2B-Brute-Force-and-KMP
+// But still if you have problem this.Then this is the perfect editorial: https://leetcode.com/problems/implement-strstr/discuss/12956/C%2B%2B-Brute-Force-and-KMP
 class Solution {
 public:
 	int strStr(string haystack, string needle) {
