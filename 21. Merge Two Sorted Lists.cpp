@@ -1,4 +1,4 @@
-//Ediotrial: https://youtu.be/S5doKK6KDWM
+//Ediotrial: https://youtu.be/S5doKK6KDWM, https://leetcode.com/problems/merge-two-sorted-lists/discuss/9715/Java-1-ms-4-lines-codes-using-recursion
 /**
  * Definition for singly-linked list.
  * struct ListNode {
