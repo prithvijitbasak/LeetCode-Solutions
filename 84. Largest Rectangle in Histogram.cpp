@@ -1,11 +1,11 @@
-//Method 1: TC: O(n)  SC:O(3n)
+//Method 1: 2 pass solution
 //Editorial: https://youtu.be/X0X6G-eWgQ8
 class Solution {
 public:
     int largestRectangleArea(vector<int>& heights) {
         int n=heights.size();
         stack<int> stk;
-        vector<int> pse(n),nge(n);
+        vector<int> pse(n),nse(n);
         for(int i=0;i<n;i++)
         {
             while(!stk.empty() and heights[stk.top()]>=heights[i])
@@ -23,15 +23,15 @@ public:
             while(!stk.empty() and heights[stk.top()]>=heights[i])
                 stk.pop();
             if(stk.empty())
-                nge[i]=n-1;
+                nse[i]=n-1;
             else
-                nge[i]=stk.top()-1;
+                nse[i]=stk.top()-1;
             stk.push(i);
         }
         int maxa=0;
         for(int i=0;i<n;i++)
         {
-            maxa=max(maxa,heights[i]*(nge[i]-pse[i]+1));
+            maxa=max(maxa,heights[i]*(nse[i]-pse[i]+1));
         }
         return maxa;
     }
