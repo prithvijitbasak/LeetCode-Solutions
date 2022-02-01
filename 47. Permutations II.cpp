@@ -1,4 +1,4 @@
-//Editorial: https://leetcode.com/problems/permutations-ii/discuss/?currentPage=1&orderBy=most_votes&query=
+//Editorial: https://leetcode.com/problems/permutations-ii/discuss/18596/A-simple-C%2B%2B-solution-in-only-20-lines
 class Solution {
 public:
     void solve(int i,int j,vector<int> nums,vector<vector<int>> &ans)
