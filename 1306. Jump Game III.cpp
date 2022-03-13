@@ -1,4 +1,4 @@
-//Editorial: https://leetcode.com/problems/jump-game-iii/
+//Editorial: https://leetcode.com/problems/jump-game-iii/discuss/1619031/C%2B%2BPython-Simple-Solution-w-Explanation-or-DFS-and-BFS-Traversals
 class Solution {
 public:
     bool canReach(vector<int>& arr, int start) {
