@@ -74,6 +74,7 @@ public:
     }
 };
 //Approach 2: Using GCD.
+//Editorial: https://youtu.be/D-DYtUmRMa4
 class Solution {
 public:
     bool canMeasureWater(int x, int y, int target) {
