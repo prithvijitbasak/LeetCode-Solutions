@@ -32,7 +32,7 @@ public:
         return false;
     }
 };
-//Approach 1: TC: O(logn) and SC: O(1)
+//Approach 2: TC: O(logn) and SC: O(1)
 class Solution {
 public:
     bool search(vector<int>& nums, int target) {
