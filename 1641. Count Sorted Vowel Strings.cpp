@@ -16,3 +16,11 @@ public:
         return a+e+i+o+u;
     }
 };
+//Approach 2: Using mathematics. TC: O(1) SC: O(1)
+//Editorial: https://leetcode.com/problems/count-sorted-vowel-strings/discuss/1021493/One-line-solution-or-Math-or-No-DP-no-Big-Integers-or-O(1)-time-space
+class Solution {
+public:
+    int countVowelStrings(int n) {
+        return (n+1)*(n+2)*(n+3)*(n+4)/24;
+    }
+};
