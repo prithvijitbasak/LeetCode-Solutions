@@ -36,3 +36,29 @@ public:
         return maxa;
     }
 };
+//Approach 2: 1-pass solution.
+//Editorial: https://youtu.be/jC_cWLy7jSI
+class Solution {
+public:
+    int largestRectangleArea(vector<int>& heights) {
+        stack<int> stk;
+        int n=heights.size();
+        int ans=0;
+        for(int i=0;i<=n;i++)
+        {
+            while(!stk.empty() and (i==n or heights[stk.top()]>=heights[i]))
+            {
+                int h=heights[stk.top()];
+                stk.pop();
+                int w;
+                if(stk.empty())
+                    w=i;
+                else
+                    w=i-stk.top()-1;
+                ans=max(ans,h*w);
+            }
+            stk.push(i);
+        }
+        return ans;
+    }
+};
