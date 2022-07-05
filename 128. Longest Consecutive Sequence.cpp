@@ -1,4 +1,5 @@
-//Editorial: https://leetcode.com/problems/longest-consecutive-sequence/discuss/1254638/Short-and-Easy-Solution-w-Explanation-or-O(N)-Solution-with-comments-using-hashset
+//Editorial: https://leetcode.com/problems/longest-consecutive-sequence/solution/
+//Approach 1: Using sorting. TC: O(nlogn) SC: O(1)
 class Solution {
 public:
     int longestConsecutive(vector<int>& nums) {
@@ -20,4 +21,30 @@ public:
         }
         return max(ls,cs);
 }
+};
+//Approach 2: Using hashset TC: O(n) SC; O(n)
+class Solution {
+public:
+    int longestConsecutive(vector<int>& nums) {
+        int n=nums.size();
+        set<int> st;
+        for(auto it:nums)
+            st.insert(it);
+        int ans=0;
+        for(auto it:st)
+        {
+            if(st.find(it-1)==st.end())
+            {
+                int currnum=it;
+                int currstreak=1;
+                while(st.find(currnum+1)!=st.end())
+                {
+                    currnum+=1;
+                    currstreak+=1;
+                }
+                ans=max(ans,currstreak);
+            }
+        }
+        return ans;
+    }
 };
