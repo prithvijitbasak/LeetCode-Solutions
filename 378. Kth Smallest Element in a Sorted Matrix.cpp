@@ -19,6 +19,7 @@ public:
     }
 };
 //Approach 2: Using binary-search. TC: O(n*logn*logn) SC: O(1)
+// Editorial: https://youtu.be/w36ekZYq-Ms
 class Solution {
 public:
     int kthSmallest(vector<vector<int>>& matrix, int k) {
