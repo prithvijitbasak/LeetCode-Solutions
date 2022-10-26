@@ -1,4 +1,4 @@
-//Editorial: https://leetcode.com/problems/continuous-subarray-sum/discuss/679929/C++-Code-With-Comments
+//Editorial: https://leetcode.com/problems/continuous-subarray-sum/discuss/679929/C++-Code-With-Comments , https://youtu.be/OKcrLfR-8mE
 class Solution {
 public:
     bool checkSubarraySum(vector<int>& nums, int k) {
