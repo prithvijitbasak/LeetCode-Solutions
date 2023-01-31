@@ -13,14 +13,14 @@ public:
         {
             dx=mp[target[i]].first-mp[target[i-1]].first;
             dy=mp[target[i]].second-mp[target[i-1]].second;
-            if(dx>0)
-                ans+=string(dx,'D');
-            if(dy>0)
-                ans+=string(dy,'R');
             if(dx<0)
                 ans+=string(-dx,'U');
             if(dy<0)
                 ans+=string(-dy,'L');
+            if(dx>0)
+                ans+=string(dx,'D');
+            if(dy>0)
+                ans+=string(dy,'R');
             ans+='!';
         }
         return ans;
