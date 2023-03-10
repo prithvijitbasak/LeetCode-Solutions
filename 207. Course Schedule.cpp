@@ -4,9 +4,7 @@ public:
     bool canFinish(int v, vector<vector<int>>& nums) {
         vector<int> adj[v];
         for(int i=0;i<nums.size();i++)
-        {
-            adj[nums[i][0]].push_back(nums[i][1]);
-        }
+            adj[nums[i][1]].push_back(nums[i][0]);
         vector<int> indegree(v,0);
         for(int i=0;i<v;i++)
         {
