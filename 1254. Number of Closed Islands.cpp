@@ -5,9 +5,9 @@ public:
     {
         if(row<0 or row>=m or col<0 or col>=n)
             return false;
-        if(grid[row][col])
+        if(grid[row][col])  // we will stop traversing if a water is found and return 0.
             return true;
-        grid[row][col]=1;
+        grid[row][col]=2;  // to mark it visited for the land .
         bool up=dfs(grid,row+1,col,m,n);
         bool down=dfs(grid,row-1,col,m,n);
         bool right=dfs(grid,row,col+1,m,n);
