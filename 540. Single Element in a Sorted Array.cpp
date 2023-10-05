@@ -1,4 +1,4 @@
-//Editorial: https://leetcode.com/problems/single-element-in-a-sorted-array/discuss/627921/Java-or-C++-or-Python3-or-Easy-explanation-or-O(logn)-or-O(1)
+//Editorial: https://youtu.be/AZOmHuHadxQ?si=pvDECt2tKBU7Fbk7
 class Solution {
 public:
     int singleNonDuplicate(vector<int>& nums) {
